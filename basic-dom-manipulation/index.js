@@ -30,3 +30,10 @@ function guessNumber() {
     return;
   }
 }
+
+document.getElementById("guesser").addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    guessNumber();
+  }
+})
